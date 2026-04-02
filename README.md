@@ -33,7 +33,7 @@ Remoção de oração
 de tum
 Limpeza de arquivos CSV
 
-Atividade 4 – Scanner em Python
+Atividade 4 - 
 Foi implementado um scanner em Python utilizando uma biblioteca re, capaz de identificar tokens em uma string.
 
 Atividade 5 – Automáticos Finitos (JFLAP)
