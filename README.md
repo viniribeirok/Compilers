@@ -1,73 +1,61 @@
-LAB 1 - Compiladores
+Aqui está uma versão reformulada do seu relatório. Organizei as informações com títulos claros, ajustei algumas frases para melhorar a fluidez da leitura e corrigi pequenos detalhes (como na atividade 3) para deixar o texto mais profissional e fácil de entender.
+
+Relatório de Laboratório 1: Analisador Léxico
 
 Identificação
-Faculdade: PUC-SP
+
+Instituição: PUC-SP
+
 Curso: Ciência da Computação
+
 Disciplina: Compiladores
-LAB: Analisador Léxico
 
-Equipe:
-João Vitor Bittencourt
-Vinicius Pereira Ribeiro
+Equipe: João Vitor Bittencourt e Vinicius Pereira Ribeiro
 
+Objetivo Principal
+O foco deste laboratório foi entender na prática o coração de um analisador léxico (scanner). Exploramos como ele utiliza expressões regulares e autômatos finitos para reconhecer padrões, transformar textos e interpretar códigos.
 
-Objetivo
-O objetivo deste laboratório foi compreender o funcionamento de um analisador léxico (scanner), utilizando expressões regulares e automáticas finitas para reconhecimento de padrões em textos e códigos.
+Resumo das Atividades
+1. Simulando um Scanner em Bash
+Criamos um script simples em Bash para simular um scanner, observando passo a passo como um código-fonte é percorrido e fatiado em pedaços menores, chamados de tokens.
 
-Atividade 1 – Scanner em Bash
-Foi realizada uma simulação de um scanner simples utilizando script Bash, demonstrando como um código pode ser percorrido e dividido em tokens.
-
-Atividade 2 – Expressões Regulares
-Utilizamos ferramentas online como regexr e regex101 para criar expressões regulares capazes de identificar:
+2. Dominando Expressões Regulares (Regex)
+Com o apoio de ferramentas visuais como regexr e regex101, construímos expressões para capturar elementos essenciais da programação:
 
 Identificadores
+
 Números inteiros
+
 Operadores
-Espaços
-Isso declarado como tokens são definidos por padrões.
 
-Atividade 3 – Find/Replace com Regex
-Aplicamos expressões regulares em arquivos reais, realizando substituições e limpeza de dados, como:
+Espaços em branco
 
-Remoção de oração
-de tum
-Limpeza de arquivos CSV
+Essa etapa deixou claro como os tokens nascem a partir de padrões bem definidos.
 
-Atividade 4 - 
-Foi implementado um scanner em Python utilizando uma biblioteca re, capaz de identificar tokens em uma string.
+3. Limpeza de Dados com Regex (Find/Replace)
+Levamos as expressões regulares para o mundo real. Aplicamos a técnica em arquivos para fazer substituições em massa e limpeza de dados, incluindo a organização de arquivos CSV e a remoção de formatações e trechos indesejados no texto.
 
-Atividade 5 – Automáticos Finitos (JFLAP)
-Criamos autômatos finitos determinísticos (DFA) e não determinísticos (NFA) para considerar padrões como:
+4. Construindo um Scanner em Python
+Subimos o nível implementando um scanner real na linguagem Python. Utilizando a biblioteca nativa re, o código foi capaz de varrer uma string e identificar seus tokens com precisão.
 
-Números
-Identificadores
-Operadores
-Também realizamos a conversão de NFA para DFA.
+5. Modelagem com Autômatos Finitos (JFLAP)
+Desenhamos a lógica por trás das expressões regulares criando Autômatos Finitos Determinísticos (DFA) e Não Determinísticos (NFA). Modelamos o reconhecimento de números, identificadores e operadores, e realizamos também o processo prático de conversão de um NFA para um DFA.
 
-Atividade 6 – Tokenizer OpenAI
-Comparação entre tokens de compiladores e tokens de IA:
+6. Compiladores vs. Inteligência Artificial
+Fizemos um estudo comparativo interessante entre os tokens tradicionais e os tokens de IA (usando o Tokenizer da OpenAI):
 
-O tokenizer da OpenAI utiliza BPE (Byte Pair Encoding)
-Já o scanner de compiladores segue regras de linguagem
-Exemplo: A palavra "position" pode ser quebrada em partes menores pela IA, mas em compiladores ela é um único token.
+Compiladores: Seguem regras rígidas da linguagem (exemplo: a palavra "position" é lida como um único token).
 
-Atividade 7 – Scanner de Livro
-Foi desenvolvido um scanner em Python para analisar um texto literário em português, utilizando expressões regulares para separar palavras e sugestões.
+IA (OpenAI): Utiliza o método BPE (Byte Pair Encoding), que quebra a palavra "position" em pedaços menores por uma questão de eficiência estatística.
 
-Entrada:
+7. Processamento de Linguagem Natural (Texto Literário)
+Desenvolvemos um scanner em Python voltado para a nossa língua. Ele recebeu como entrada um arquivo .txt contendo um livro em português e, usando regex, processou todo o texto para entregar uma lista estruturada de tokens, separando as palavras dos símbolos de pontuação.
 
-Arquivo .txtcontendo texto do livro
-eu:
+Atividade Extra: A IA como Analisador Léxico
+Desafiamos uma Inteligência Artificial a escrever um scanner que classificasse tipos gramaticais de palavras (como verbos, artigos, etc.). O resultado foi um código funcional, mas que demonstrou limitações práticas na execução da tarefa.
 
-Lista de tokens (palavras e símbolos)
-Atividade Extra – IA como Analisador Léxico
-Foi solicitada a uma IA a criação de um scanner capaz de identificar tipos de tokens (verbo, artigo, etc.).
+Discussão e Aprendizados
+Um dos grandes insights do laboratório foi perceber os limites da ferramenta. Não é possível mapear completamente a língua portuguesa usando apenas expressões regulares. Idiomas naturais possuem estruturas complexas e ambiguidades que bloqueiam esse tipo de abordagem, exigindo gramáticas mais avançadas (como as gramáticas livres de contexto) para serem processadas corretamente.
 
-Resultado
-A IA conseguiu gerar um código funcional, porém limitado.
-
-Discussão
-Não é possível representar completamente a língua portuguesa com expressões regulares, pois ela possui estruturas complexas que bloqueiam gramáticas mais avançadas (livres de contexto).
-
-#Conclusão
-O analisador léxico é responsável por transformar o código em tokens, sendo a primeira etapa de um compilador.
+Conclusão
+O analisador léxico é a porta de entrada de qualquer compilador. Sua missão de varrer o código e transformá-lo em uma sequência estruturada de tokens é a base indispensável para que a máquina consiga, nas etapas seguintes, entender a estrutura gramatical e compilar o programa com sucesso.
