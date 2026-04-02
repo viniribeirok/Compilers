@@ -6,7 +6,7 @@ Curso: Ciência da Computação
 Disciplina: Compiladores
 LAB: Analisador Léxico
 
-#Equipe:
+Equipe:
 João Vitor Bittencourt
 Vinicius Pereira Ribeiro
 
