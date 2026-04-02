@@ -1,5 +1,3 @@
-Aqui está uma versão reformulada do seu relatório. Organizei as informações com títulos claros, ajustei algumas frases para melhorar a fluidez da leitura e corrigi pequenos detalhes (como na atividade 3) para deixar o texto mais profissional e fácil de entender.
-
 Relatório de Laboratório 1: Analisador Léxico
 
 Identificação
