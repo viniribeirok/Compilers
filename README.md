@@ -8,7 +8,7 @@ Curso: Ciência da Computação
 
 Disciplina: Compiladores
 
-Equipe: João Vitor Bittencourt e Vinicius Pereira Ribeiro
+Equipe: João Vitor Bittencourt, Kaiky Kenji e Vinicius Pereira Ribeiro
 
 Objetivo Principal
 O foco deste laboratório foi entender na prática o coração de um analisador léxico (scanner). Exploramos como ele utiliza expressões regulares e autômatos finitos para reconhecer padrões, transformar textos e interpretar códigos.
